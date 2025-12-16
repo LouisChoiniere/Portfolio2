@@ -9,3 +9,9 @@
 </svelte:head>
 
 {@render children()}
+
+<style lang="scss">
+	:global {
+		@import '$lib/styles/styles.scss';
+	}
+</style>
