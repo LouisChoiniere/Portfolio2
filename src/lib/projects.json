@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "isFeatured": true,
+    "title": "Custom web app for construction company",
+    "date": "2020 - 2021",
+    "image": "/images/projects/te-ou.png",
+    "description": "Designed and built a custom PCB with an Arduino and Wi-Fi capabilities to function as a thermostat. Integrated temperature sensors and a relay to control heating/cooling systems remotely through a web interface.",
+    "tags": [
+      "ASP.NET",
+      "Razor Pages",
+      "Bootstrap",
+      "MySQL"
+    ]
+  },
+  {
+    "id": 2,
+    "isFeatured": true,
+    "title": "This Portfolio",
+    "date": "2022 - Current",
+    "image": "/images/projects/portfolio.png",
+    "description": "Create a portfolio using a framework that I have not used before (React). This is to develop my skills using new frameworks. I also familiarized myself using continuous integration using Cloudflare pages to automatically deploy changes made to the portfolio.",
+    "tags": [
+      "React",
+      "JavaScript",
+      "SCSS",
+      "Cloudflare Pages"
+    ]
+  },
+  {
+    "id": 3,
+    "isFeatured": true,
+    "title": "DIY Thermostat",
+    "date": "2024 - present",
+    "image": "/images/projects/SmartHVAC.png",
+    "description": "This project was to create a custom website for our final project in college. This custom website was used to track employee schedules, tools and truck locations. It also included an admin page for managing employee credentials and permissions.",
+    "tags": [
+      "PCB Design",
+      "C++",
+      "Websockets"
+    ]
+  }
+]
