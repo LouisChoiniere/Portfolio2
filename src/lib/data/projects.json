@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "isFeatured": true,
+    "isFeatured": false,
     "title": "Custom web app for construction company",
     "date": "2020 - 2021",
     "image": "/images/projects/te-ou.png",
@@ -11,7 +11,8 @@
       "Razor Pages",
       "Bootstrap",
       "MySQL"
-    ]
+    ],
+    "links": {}
   },
   {
     "id": 2,
@@ -25,7 +26,11 @@
       "JavaScript",
       "SCSS",
       "Cloudflare Pages"
-    ]
+    ],
+    "links": {
+      "site": "https://louischoiniere.me",
+      "github": "https://github.com/LouisChoiniere/Portfolio2"
+    }
   },
   {
     "id": 3,
@@ -38,6 +43,9 @@
       "PCB Design",
       "C++",
       "Websockets"
-    ]
+    ],
+    "links": {
+      "github": "https://github.com/LouisChoiniere/SmartHVAC"
+    }
   }
 ]
