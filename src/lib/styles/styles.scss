@@ -7,6 +7,19 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.is-bold {
+    font-weight: bold;
+}
+
 .tags {
     display: flex;
     gap: 0.5rem;
@@ -16,7 +29,7 @@ body {
 
         border: 1px solid #ccc;
         border-radius: 4px;
-        
+
         padding: 0.25rem 0.5rem;
 
         background-color: #fff;
@@ -62,13 +75,8 @@ body {
         .card-body {
             margin: 0.5rem;
 
-            h3, p {
-                margin: 0;
-            }
-
-
             .title {
-                font-size: 1.25em ;
+                font-size: 1.25em;
                 font-weight: bold;
 
                 a {
@@ -92,6 +100,69 @@ body {
                 margin-top: 0.5rem;
 
                 font-size: 0.7em;
+            }
+        }
+    }
+}
+
+.info-list {
+    margin: 1rem 0;
+
+    .info-item {
+        margin-bottom: 0.5rem;
+        
+        border-radius: 0.75rem;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+        
+        padding: 1rem;
+
+        background: #f8f9fa;
+
+        >.header {
+            margin-bottom: 0.25rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            >.title {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: #222;
+            }
+
+            >.meta {
+                margin-left: 1rem;
+
+                font-size: 0.85rem;
+                font-style: italic;
+                white-space: nowrap;
+                color: #888;
+            }
+        }
+
+        >.desc {            
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        >.list {
+            margin-top: 0.75rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+
+            // Nested info items
+            >.info-item {
+                background: #fff;
+                padding: 0.5rem 0.75rem;
+                // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+                // margin: 0;
+
+                >.header .title {
+                    font-weight: normal;
+                }
             }
         }
     }

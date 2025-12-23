@@ -1,7 +1,51 @@
 {
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "location": "Montréal, Canada",
+  "mail": "louischoiniere@outlook.com",
   "links": {
     "linkedin": "https://linkedin.com/in/louischoiniere",
     "github": "https://github.com/louischoiniere"
-  }
+  },
+  "employment": [
+    {
+      "company": "Pratt & Whitney Canada",
+      "segments": [
+        {
+          "position": "Non-Destructive Testing Group Internship",
+          "dates": "Jan 2025 - Present",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "company": "Circle6",
+      "segments": [
+        {
+          "position": "Junior Fullstack Web Developer",
+          "dates": "Jun 2021 - Jan 2022 (8 months)",
+          "description": ""
+        }, {
+          "position": "Internship",
+          "dates": "Mar 2021 - May 2021 (3 months)",
+          "description": ""
+        }
+      ],
+      "description": "Created responsive user interfaces and improved user experience for various clients."
+    }
+  ], 
+  "education": [
+    {
+      "institution": "Concordia University",
+      "degree": "Bachelor of Engineering - Computer Engineering",
+      "dates": "2021 - 2026",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "institution": "Champlain Regional College St. Lambert",
+      "degree": "DEC - Computer Science Legacy to Mobile",
+      "dates": "2018 - 2021",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ]
 }
