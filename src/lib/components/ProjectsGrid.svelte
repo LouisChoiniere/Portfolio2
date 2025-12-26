@@ -40,7 +40,7 @@
                 <div class="description">{project.description}</div>
                 <div class="tags">
                     {#each project.tags as tag}
-                        <span class="tag">{tag}</span>
+                        <span class="tag colored">{tag}</span>
                     {/each}
                 </div>
             </div>

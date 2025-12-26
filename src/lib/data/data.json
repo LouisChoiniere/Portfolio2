@@ -11,6 +11,7 @@
       "company": "Pratt & Whitney Canada",
       "segments": [
         {
+          "current": true,
           "position": "Non-Destructive Testing Group Internship",
           "dates": "Jan 2025 - Present",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

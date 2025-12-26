@@ -1,0 +1,66 @@
+/* stylelint-disable custom-property-empty-line-before */
+:root {
+  --dark-shade0: #2C2E36;
+  
+  --dark-shade1: #676973;
+  
+  --dark-shade2: #A4A6B0;
+  
+  --dark-shade3: #B7BAC4;
+  
+  --dark-shade4: #CCCED9;
+  
+  --dark-shade5: #E1E3EE;
+  
+  --dark-shade6: #F0F3FE;
+  
+  --dark-shade7: #FAFBFE;
+  
+  --dark-accent0: #F2A4A2;
+  
+  --dark-accent1: #EFA987;
+  
+  --dark-accent2: #E4B073;
+  
+  --dark-accent3: #AFC37A;
+  
+  --dark-accent4: #86CAA0;
+  
+  --dark-accent5: #83C0F5;
+  
+  --dark-accent6: #C4AEF7;
+  
+  --dark-accent7: #EEA3BB;
+  
+  --light-shade0: #F0F3FE;
+  
+  --light-shade1: #CCCED9;
+  
+  --light-shade2: #A4A6B0;
+  
+  --light-shade3: #82848D;
+  
+  --light-shade4: #676973;
+  
+  --light-shade5: #494A53;
+  
+  --light-shade6: #2C2E36;
+  
+  --light-shade7: #13141B;
+  
+  --light-accent0: #C06868;
+  
+  --light-accent1: #BC6D47;
+  
+  --light-accent2: #B17629;
+  
+  --light-accent3: #778D35;
+  
+  --light-accent4: #419466;
+  
+  --light-accent5: #3E88C5;
+  
+  --light-accent6: #787ACF;
+  
+  --light-accent7: #BB6784;
+}

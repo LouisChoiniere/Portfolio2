@@ -53,7 +53,7 @@
             {/if}
             <div class="list">
                 {#each employment.segments as segment}
-                    <div class="info-item">
+                    <div class="list-item {('current' in segment && segment.current) ? 'hollow' : ''}">
                         <div class="header">
                             <span class="title">{segment.position}</span>
                             <span class="meta">{segment.dates}</span>

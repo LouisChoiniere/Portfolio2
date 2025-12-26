@@ -42,6 +42,7 @@
 
 <style lang="scss" global>
 	@use "$lib/styles/styles.scss";
+	@use "$lib/styles/pallet.scss" as *;
 
 	header {
 		display: flex;
@@ -55,7 +56,7 @@
 
 			a {
 				text-decoration: none;
-				color: #0070f3;
+				color: $accent0;
 
 				&:hover {
 					text-decoration: underline;

@@ -1,0 +1,46 @@
+@use "./themer/Themer Future Pro - hex.css" as *;
+
+$dark-theme: true;
+
+$shade0: if(sass($dark-theme): var(--dark-shade0); else: var(--light-shade0));
+$shade1: if(sass($dark-theme): var(--dark-shade1); else: var(--light-shade1));
+$shade2: if(sass($dark-theme): var(--dark-shade2); else: var(--light-shade2));
+$shade3: if(sass($dark-theme): var(--dark-shade3); else: var(--light-shade3));
+$shade4: if(sass($dark-theme): var(--dark-shade4); else: var(--light-shade4));
+$shade5: if(sass($dark-theme): var(--dark-shade5); else: var(--light-shade5));
+$shade6: if(sass($dark-theme): var(--dark-shade6); else: var(--light-shade6));
+$shade7: if(sass($dark-theme): var(--dark-shade7); else: var(--light-shade7));
+$accent0: if(sass($dark-theme): var(--dark-accent0); else: var(--light-accent0));
+$accent1: if(sass($dark-theme): var(--dark-accent1); else: var(--light-accent1));
+$accent2: if(sass($dark-theme): var(--dark-accent2); else: var(--light-accent2));
+$accent3: if(sass($dark-theme): var(--dark-accent3); else: var(--light-accent3));
+$accent4: if(sass($dark-theme): var(--dark-accent4); else: var(--light-accent4));
+$accent5: if(sass($dark-theme): var(--dark-accent5); else: var(--light-accent5));
+$accent6: if(sass($dark-theme): var(--dark-accent6); else: var(--light-accent6));
+$accent7: if(sass($dark-theme): var(--dark-accent7); else: var(--light-accent7));
+
+$accent-colors: (
+    $accent0,
+    $accent1,
+    $accent2,
+    $accent3,
+    $accent4,
+    $accent5,
+    $accent6,
+    $accent7
+);
+
+$body-background-color: $shade0;
+$body-color: $shade7;
+
+$border-radius-small: 0.5rem;
+$border-radius-medium: 0.75rem;
+$border-radius-large: 1rem;
+
+$graph-color: $accent7;
+$graph-width: 3px;
+
+body {
+    background-color: $body-background-color;
+    color: $body-color;
+}
