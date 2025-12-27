@@ -36,7 +36,7 @@
 	</nav>
 </header>
 
-<main>	
+<main>
 	{@render children()}
 </main>
 
@@ -45,6 +45,7 @@
 <style lang="scss" global>
 	@use "$lib/styles/styles.scss";
 	@use "$lib/styles/pallet.scss" as *;
+	@use "$lib/styles/_responsive.scss" as rs;
 
 	header {
 		display: flex;
@@ -52,28 +53,26 @@
 		align-items: center;
 		margin: 1rem 0;
 
+		@include rs.is-mobile {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+		}
+
 		.breadcrumbs {
 			display: flex;
 			gap: 0.5rem;
+			flex-wrap: wrap;
 
 			a {
-				text-decoration: none;
 				color: $breadcrumb-color;
-
-				&:hover {
-					text-decoration: underline;
-				}
 			}
 		}
 
 		nav {
 			display: flex;
 			gap: 1.5rem;
-
-			a {
-				text-decoration: none;
-				color: inherit;
-			}
+			flex-wrap: wrap;
 		}
 	}
 

@@ -27,17 +27,19 @@
     if (months !== 0) {
       return ` (${months} ${months === 1 ? "month" : "months"})`;
     }
-    
-    return '';
+
+    return "";
   }
 </script>
 
 <h1 class="name">Louis Choinière</h1>
 <div class="subtitle">
-  <FontAwesomeIcon icon={faLocationDot} size="sm" />
-  {data.location}. &nbsp;&nbsp;
-  <FontAwesomeIcon icon={faEnvelope} size="sm" />
-  <a href="mailto:{data.mail}">{data.mail}</a>
+  <span>
+    <FontAwesomeIcon icon={faLocationDot} size="sm" /> {data.location}
+  </span>
+  <span>
+    <FontAwesomeIcon icon={faEnvelope} size="sm" /> <a href="mailto:{data.mail}">{data.mail}</a>
+  </span>
 </div>
 
 <p>
@@ -53,6 +55,8 @@
     <FontAwesomeIcon icon={faGithub} size="sm" />GitHub
   </a>
 </div>
+
+<hr />
 
 <h2>Employment</h2>
 <div class="employment">
@@ -80,6 +84,8 @@
   {/each}
 </div>
 
+<hr />
+
 <h2>Education</h2>
 <div class="education">
   {#each data.education as education}
@@ -97,6 +103,8 @@
   {/each}
 </div>
 
+<hr />
+
 <h2>Featured Projects</h2>
 
 <ProjectsGrid {projects} />
@@ -109,14 +117,26 @@
   .name {
     margin-bottom: 0;
 
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
 
   .subtitle {
     margin-top: 0;
 
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     opacity: 0.75;
+
+    display: flex;
+    gap: 1rem;
+
+    @include rs.is-mobile {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    span {
+      white-space: nowrap;
+    }
   }
 
   .links {
@@ -128,8 +148,13 @@
     }
   }
 
+  hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 2px solid $shade2;
+  }
+
   h2 {
-    margin-top: 3.5rem;
     margin-bottom: 1rem;
   }
 

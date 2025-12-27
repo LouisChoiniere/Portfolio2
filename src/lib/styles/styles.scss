@@ -8,7 +8,9 @@ body {
 
     max-width: 55rem;
 
+    color: $body-color;
     font-family: Verdana, sans-serif;
+    background-color: $body-background-color;
 }
 
 a {
