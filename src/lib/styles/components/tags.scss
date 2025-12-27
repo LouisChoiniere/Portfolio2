@@ -1,0 +1,26 @@
+@use "$lib/styles/pallet.scss" as *;
+@use "sass:list";
+
+.tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    .tag {
+        border: 1px solid $shade3;
+        border-radius: 4px;
+
+        padding: 0.25rem 0.5rem;
+
+        background-color: $shade1;
+        color: $shade7;
+        font-size: inherit;
+
+        // Cycle accent backgrounds by position using nth-child
+        @for $i from 1 through 8 {
+            &.colored:nth-child(8n + #{$i}) {
+                color: list.nth($accent-colors, $i);
+            }
+        }
+    }
+}

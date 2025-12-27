@@ -36,7 +36,9 @@
 	</nav>
 </header>
 
-{@render children()}
+<main>	
+	{@render children()}
+</main>
 
 <footer></footer>
 
@@ -48,7 +50,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 1rem 2rem;
+		margin: 1rem 0;
 
 		.breadcrumbs {
 			display: flex;
@@ -56,7 +58,7 @@
 
 			a {
 				text-decoration: none;
-				color: $accent0;
+				color: $breadcrumb-color;
 
 				&:hover {
 					text-decoration: underline;
@@ -73,5 +75,9 @@
 				color: inherit;
 			}
 		}
+	}
+
+	footer {
+		margin: 2rem 0;
 	}
 </style>

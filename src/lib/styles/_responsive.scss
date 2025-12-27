@@ -1,0 +1,17 @@
+@mixin is-touch {
+    @media (pointer: coarse) {
+        @content;
+    }
+}
+
+@mixin is-mobile {
+    @media (width <= 640px) {
+        @content;
+    }
+}
+
+@mixin is-less-than-medium {
+    @media (width <= 1024px) {
+        @content;
+    }
+}

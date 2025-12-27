@@ -13,8 +13,9 @@
         {
           "current": true,
           "position": "Non-Destructive Testing Group Internship",
-          "dates": "Jan 2025 - Present",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          "dates": "Jan 2025 - Current",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "start_date": "2025-01-01"
         }
       ],
       "description": ""
@@ -37,6 +38,7 @@
   ], 
   "education": [
     {
+      "current": true,
       "institution": "Concordia University",
       "degree": "Bachelor of Engineering - Computer Engineering",
       "dates": "2021 - 2026",

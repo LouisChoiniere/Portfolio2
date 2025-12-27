@@ -1,0 +1,70 @@
+$graph-width: 3px;
+
+@mixin graph($graph-color, $background-color) {
+    position: relative;
+    border-left: $graph-width solid $graph-color;
+    padding-left: 1em;
+
+    &:first-child {
+        border-image: linear-gradient(to bottom, $background-color 0.5rem, $graph-color 0.5rem) 1;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        position: absolute;
+        left: calc(-0.5em - 0.5px);
+        top: calc(1em / 2 - 4px);
+        width: 8px;
+        height: 8px;
+        border: $graph-width solid $graph-color;
+        border-radius: 50%;
+        content: "";
+        background-color: $graph-color;
+    }
+
+    &.hollow::before {
+        background-color: $background-color;
+    }
+}
+
+@mixin graph-start($graph-color, $background-color) {
+    position: relative;
+    border-left: $graph-width solid $graph-color;
+    border-image: linear-gradient(to bottom, $background-color 0.5rem, $graph-color 0.5rem) 1;
+    padding-left: 1em;
+
+    &::before {
+        position: absolute;
+        left: calc(-0.5em - 0.5px);
+        top: calc(1em / 2 - 4px);
+        width: 8px;
+        height: 8px;
+        border: $graph-width solid $graph-color;
+        border-radius: 50%;
+        content: "";
+        background-color: $graph-color;
+    }
+
+    &.hollow::before {
+        background-color: $background-color;
+    }
+}
+
+@mixin graph-no-dot($graph-color, $background-color) {
+    position: relative;
+    border-left: $graph-width solid $graph-color;
+    padding-left: 1em;
+
+    &:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@mixin graph-no-line() {
+    position: relative;
+    padding-left: 1em;
+    border-left: $graph-width solid transparent;
+}

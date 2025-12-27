@@ -1,4 +1,4 @@
-@use "./themer/Themer Future Pro - hex.css" as *;
+@import "./themer/Themer Future Pro - hex.css";
 
 $dark-theme: true;
 
@@ -33,12 +33,14 @@ $accent-colors: (
 $body-background-color: $shade0;
 $body-color: $shade7;
 
+$main-accent-color: $accent7;
+
+$breadcrumb-color: $main-accent-color;
+$graph-color: $main-accent-color;
+
 $border-radius-small: 0.5rem;
 $border-radius-medium: 0.75rem;
 $border-radius-large: 1rem;
-
-$graph-color: $accent7;
-$graph-width: 3px;
 
 body {
     background-color: $body-background-color;

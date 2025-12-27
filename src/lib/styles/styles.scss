@@ -1,11 +1,12 @@
 @use "pallet.scss" as *;
-@use "sass:list";
+@forward "components";
+
 
 body {
     margin: 0 auto;
     padding: 1rem;
 
-    max-width: 50rem;
+    max-width: 55rem;
 
     font-family: Verdana, sans-serif;
 }
@@ -19,178 +20,12 @@ a {
     }
 }
 
+svg {
+    max-width: 50px;
+}
+
 .is-bold {
     font-weight: bold;
 }
 
-.tags {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
 
-    .tag {
-        border: 1px solid $shade3;
-        border-radius: 4px;
-
-        padding: 0.25rem 0.5rem;
-
-        background-color: $shade1;
-        color: $shade7;
-        font-size: inherit;
-
-        // Cycle accent backgrounds by position using nth-child
-        @for $i from 1 through 8 {
-            &.colored:nth-child(8n + #{$i}) {
-                color: list.nth($accent-colors, $i);
-            }
-        }
-    }
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1em;
-
-    @media (width <= 640px) {
-        grid-template-columns: 1fr;
-    }
-
-    .card {
-        overflow: hidden;
-
-        background-color: $shade1;
-        box-sizing: border-box;
-        border-radius: 1rem;
-
-        .card-image {
-            margin: 0.5rem;
-            position: relative;
-            width: calc(100% - 1rem);
-            padding-top: 56.25%; // Aspect ratio 16:9
-            overflow: hidden;
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 0.5rem;
-            }
-        }
-
-        .card-body {
-            margin: 0.5rem;
-
-            .title {
-                font-size: 1.25em;
-                font-weight: bold;
-
-                a {
-                    color: inherit;
-                    text-decoration: none;
-                }
-            }
-
-            .date {
-                font-size: 0.875em;
-                color: $shade5;
-            }
-
-            .description {
-                margin-top: 0.5rem;
-
-                font-size: 1em;
-                color: $shade6;
-            }
-
-            .tags {
-                margin-top: 0.5rem;
-
-                font-size: 0.7em;
-            }
-        }
-    }
-}
-
-.info-list {
-    margin: 1rem 0;
-
-    .info-item {
-        margin-bottom: 0.5rem;
-
-        border-radius: $border-radius-medium;
-        box-shadow: 0 1px 4px rgb(0 0 0 / 3%);
-
-        padding: 1rem;
-
-        background: $shade1;
-
-        .header {
-            margin-bottom: 0.25rem;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-
-            > .title {
-                font-size: 1.1rem;
-                font-weight: bold;
-                color: $shade7;
-            }
-
-            > .meta {
-                margin-left: 1rem;
-
-                font-size: 0.85rem;
-                font-style: italic;
-                white-space: nowrap;
-                color: $shade5;
-            }
-        }
-
-        .desc {
-            font-size: 0.95rem;
-            color: $shade6;
-        }
-
-        .list {
-            margin-top: 0.75rem;
-            margin-left: 0.5rem;
-
-            // Nested info items
-            > .list-item {
-                position: relative;
-                border-left: $graph-width solid $graph-color;
-                padding: 0.5rem 1rem;
-                padding-top: 0;
-
-                &:first-child {
-                    border-image: linear-gradient(to bottom, $shade1 0.5rem, $graph-color 0.5rem) 1;
-                }
-
-                &::before {
-                    position: absolute;
-                    left: calc(-0.5rem - 0.5px);
-                    top: calc(1em / 2 - 4px);
-                    width: 8px;
-                    height: 8px;
-                    border: $graph-width solid $graph-color;
-                    border-radius: 50%;
-                    content: "";
-                    background-color: $graph-color;
-                }
-
-                &.hollow::before {
-                    background-color: $shade1;
-                }
-
-                > .header .title {
-                    font-weight: normal;
-                }
-            }
-        }
-    }
-}

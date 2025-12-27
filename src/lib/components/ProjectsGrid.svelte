@@ -49,6 +49,9 @@
 </div>
 
 <style lang="scss">
+    // @use "$lib/styles/components/_cards.scss" as cardStyles;
+    // @use "$lib/styles/components/_tags.scss" as tagStyles;
+
     .cards {
         font-size: 0.8rem;
     }
