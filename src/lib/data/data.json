@@ -1,7 +1,7 @@
 {
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "location": "Montréal, Canada",
   "mail": "louischoiniere@outlook.com",
+  "description": "Computer engineering student focused on embedded systems and electronics, with industry experience in web application development and ongoing personal projects in electronics and digital fabrication.",
   "links": {
     "linkedin": "https://linkedin.com/in/louischoiniere",
     "github": "https://github.com/louischoiniere"
@@ -12,9 +12,9 @@
       "segments": [
         {
           "current": true,
-          "position": "Non-Destructive Testing Group Internship",
+          "position": "Intern tool developer for Non-Destructive Testing Group",
           "dates": "Jan 2025 - Current",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "description": "Developed and built a replacement internal system for managing NDT supplier and employee certifications to replace and consolidate multiple legacy platfroms.",
           "start_date": "2025-01-01"
         }
       ],
@@ -33,7 +33,7 @@
           "description": ""
         }
       ],
-      "description": "Created responsive user interfaces and improved user experience for various clients."
+      "description": "Implemented user-facing designs for client feedback on a web-based survey platform; improved core platform features and supported multiple clients across web and email channels."
     }
   ], 
   "education": [
@@ -42,13 +42,13 @@
       "institution": "Concordia University",
       "degree": "Bachelor of Engineering - Computer Engineering",
       "dates": "2021 - 2026",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "Pursuing a Bachelor of Engineering in Computer Engineering with a focus on software development, embedded systems, and computer architecture."
     },
     {
       "institution": "Champlain Regional College St. Lambert",
       "degree": "DEC - Computer Science Legacy to Mobile",
       "dates": "2018 - 2021",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "description": "DEC in Computer Science with emphasis on hands-on projects, covering legacy technologies (RPG, COBOL) and modernization through web, server-side, and Android development; graduated with honours."
     }
   ]
 }

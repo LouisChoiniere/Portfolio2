@@ -106,7 +106,12 @@
 <hr />
 
 <h2>Featured Projects</h2>
-
+<p>
+  A selection of projects that I have worked on recently. For a more comprehensive list, please visit the Projects page.
+</p>
+<p>
+  <em>Note: Still working on adding past projects.</em>
+</p>
 <ProjectsGrid {projects} />
 
 <style lang="scss">

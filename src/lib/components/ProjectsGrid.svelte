@@ -9,29 +9,28 @@
 <div class="cards">
     {#each projects as project}
         <div class="card">
-            <div class="card-image">
-                <img src={project.image} alt={project.title} />
-            </div>
+            {#if project.image}
+                <div class="card-image">
+                    <img src={project.image} alt={project.title} />
+                </div>
+            {:else}
+                <div>
+                    <br />
+                    <br />
+                </div>
+            {/if}
             <div class="card-body">
                 <div class="title">
                     {project.title}
 
                     {#if project.links.site}
-                        <a
-                            href={project.links.site}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <a href={project.links.site} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLink} size="sm" />
                         </a>
                     {/if}
 
                     {#if project.links.github}
-                        <a
-                            href={project.links.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithub} size="sm" />
                         </a>
                     {/if}
