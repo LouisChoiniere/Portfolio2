@@ -7,7 +7,10 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
+      '@fortawesome/fontawesome-svg-core':
+        specifier: ^7.1.0
+        version: 7.1.0
       '@fortawesome/free-brands-svg-icons':
         specifier: ^7.1.0
         version: 7.1.0
@@ -17,7 +20,6 @@ importers:
       '@fortawesome/svelte-fontawesome':
         specifier: ^0.2.4
         version: 0.2.4(@fortawesome/fontawesome-svg-core@7.1.0)(svelte@5.47.1)
-    devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^7.0.0
         version: 7.0.0(@sveltejs/kit@2.50.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.47.1)(vite@7.3.1(@types/node@25.0.9)(sass-embedded@1.97.2)(sass@1.97.2)))(svelte@5.47.1)(typescript@5.9.3)(vite@7.3.1(@types/node@25.0.9)(sass-embedded@1.97.2)(sass@1.97.2)))

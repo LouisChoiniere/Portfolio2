@@ -1,6 +1,11 @@
 <script lang="ts">
+	import { config } from "@fortawesome/fontawesome-svg-core";
 	import favicon from "$lib/assets/favicon.svg";
 	import { page } from "$app/state";
+
+	// Prevent FontAwesome from dynamically adding its CSS since we did it manually
+	import "@fortawesome/fontawesome-svg-core/styles.css";
+	config.autoAddCss = false;
 
 	let { children } = $props();
 
