@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { config } from "@fortawesome/fontawesome-svg-core";
-	import favicon from "$lib/assets/favicon.svg";
+	import favicon from "$lib/assets/favicon.png";
 	import { page } from "$app/state";
 
 	// Prevent FontAwesome from dynamically adding its CSS since we did it manually
